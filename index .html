@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+
+html, body {
+    height: 100%;
+}
+#logo{
+    height:60px;
+    width: 60px;
+}
+.imagescity{
+    height: 150px;
+    width: 150px;
+
+}
+.social{
+    height: 20px;
+    width: 22px;
+}
+</style>
+</head>
+
+
+
+
+   
 <body>
 <div id = main>
-<div id = header>
-    <img src = "logo.png" height="100px" width="150px">
+<header>
+    <img src = "logo.png"  id = "logo" height="100px" width="150px">
     <a href= "login.html">Login</a></div>
+</header>
     <div  id="content">
         <form>
             <input type="text" placeholder="city">
         </form>
-        <div id  = "4images">
-            <a href = "list.html"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width="300px" height="300px"></a>
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" width="300px" height="300px">
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" width="300px" height="300px">
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" width="300px" height="300px">
+        <div id  = "city">
+            <a href = "list.html"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class ="imagescity" width="300px" height="300px"></a>
+            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class ="imagescity"  width="300px" height="300px">
+            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class ="imagescity" width="300px" height="300px">
+            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  class ="imagescity" width="300px" height="300px">
         </div>
         <div id = viewmore><a href="index .html">View more >></a></div>
     </div>
-    <div id = "footer">
+    <footer>
         <a href="contact.html">Contact Us</a>
         <div id = "socialicon">
-           <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png" height="20px" width="22px"></a>
-           <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" height="20px" width="22px"></a>
-           <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" height="20px" width="22px"></a>
+           <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png"  class = "social" height="20px" width="22px"></a>
+           <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" class = "social"  height="20px" width="22px"></a>
+           <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" class = "social" height="20px" width="22px"></a>
 
         </div>
         <div><p>&copy; 2020 ROOM SEARCH PVT.LTD </p></div>
-    </div>
+
+    </footer>
 </div>
 </body>
     </html>
