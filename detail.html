@@ -2,36 +2,22 @@
 <html>
 <body>
     <head>
-        <style>
-            html, body{
-                height: 100%;
-                width: 100%;
-            }
-            #main{
-                height: 100%;
-                width:100%;
-            }
-            #logo{
-                height: 60px;
-                width: 60px;
-            }
-            #radission{
-                height: 500px;
-                width: 500px;
-            }
-            .social{
-                height: 20px;
-                width: 22px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles/detail.css" />
+        <link rel="stylesheet" href="styles/common.css" />
+        
+        
+
+        
+
     </head>
 <div id = main>
 <header>
     <a href="index .html"><img src="logo.png" id="logo" height="100px" width="150px"></a>
     <a href= "login.html" target="_blank">Login</a>
-</header>>
+</header>
     <div  id="content">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radission">
+        <div id="customer">
         <form action ="payment.html" method="get">
             Adults: <input type="number" id="Adults" min="1" max="5" required><br>
             Name:<input type="text" id="Name" required><br>
@@ -40,6 +26,8 @@
             Total:<input type="text" id="total" readonly><br>
             <button type="submit">Book Now</button>
         </form>
+    </div>
+    <div id="hoteldetail">
         <h2>Radisson Blu Hotel</h2>
         <p>RATING
             5 star
@@ -57,6 +45,7 @@
             LLogin in and enjoy
         </p>
     </div>
+</div>
     <footer>
     <a href="contact.html">Contact Us</a>
         <div id = "socialicon">

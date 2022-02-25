@@ -1,0 +1,18 @@
+.container-hotel{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: rgb(132,136,139);
+  width: 40%;
+}
+.hotel{
+  height:220px;
+  width: 250px;
+
+
+}
+.view{
+  margin-left: 2%;
+  margin-right: 2%;
+}

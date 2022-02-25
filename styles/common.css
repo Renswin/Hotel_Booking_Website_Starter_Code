@@ -1,0 +1,42 @@
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-width: 100%;
+}
+html{
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+
+  background-color: #e0e0e0;
+}
+
+.social{
+  max-width: 22px;
+  height: 20px;
+}
+
+header, footer {
+  background-color: #bc8f8f;
+}
+
+.main {
+  padding: 0;
+}
+#logo{
+  width: 60px;
+  height: 60px;
+}

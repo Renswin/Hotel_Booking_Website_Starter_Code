@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-
-html, body {
-    height: 100%;
-}
-#logo{
-    height:60px;
-    width: 60px;
-}
-.imagescity{
-    height: 150px;
-    width: 150px;
-
-}
-.social{
-    height: 20px;
-    width: 22px;
-}
-</style>
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/common.css" />
+        
 </head>
 
 
@@ -28,22 +12,28 @@ html, body {
    
 <body>
 <div id = main>
-<header>
+    <header>
     <img src = "logo.png"  id = "logo" height="100px" width="150px">
     <a href= "login.html">Login</a></div>
-</header>
+    </header>
     <div  id="content">
-        <form>
-            <input type="text" placeholder="city">
-        </form>
-        <div id  = "city">
-            <a href = "list.html"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class ="imagescity" width="300px" height="300px"></a>
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class ="imagescity"  width="300px" height="300px">
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class ="imagescity" width="300px" height="300px">
-            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  class ="imagescity" width="300px" height="300px">
+        <div id ="searchbar">
+           <form>
+            <input type="text" placeholder="city" >
+           </form>
         </div>
+      
+    
+        <div id  = "city">
+            <a href="#" class="d-inline-block img-container"><a href = "list.html"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class ="imagescity" width="300px" height="300px"></a></a>
+            <a href="#" class="d-inline-block img-container"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class ="imagescity"  width="300px" height="300px"></a>
+            <a href="#" class="d-inline-block img-container"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class ="imagescity" width="300px" height="300px"></a>
+            <a href="#" class="d-inline-block img-container"><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  class ="imagescity" width="300px" height="300px"></a>
+        </div>
+    
         <div id = viewmore><a href="index .html">View more >></a></div>
-    </div>
+  
+</div>
     <footer>
         <a href="contact.html">Contact Us</a>
         <div id = "socialicon">
