@@ -1,14 +1,9 @@
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    background-color:  #e0e0e0;
+
+body{
+    font-family: "Ubuntu", sans-serif;
 }
-#logo{
-    height:60px;
-    width: 60px;
-}
+
 .imagescity{
     height: 150px;
     width: 150px;
@@ -17,9 +12,13 @@ html, body {
 .social{
     height: 20px;
     width: 22px;
+
+    
 }
-header , footer {
-    background-color: rosybrown;
+#socialicon{
+    display: flex;
+    justify-content: right;
+    vertical-align: middle;
 }
 
 #searchbar{
@@ -46,4 +45,31 @@ header , footer {
     padding:4%; 
     border-radius:15%;
 }
+content{
+    overflow: auto;
+}
+#searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+#search{
+  height: 2.6rem;
+  width: 20rem;
+  padding-left: 0.625rem;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+}
+search:focus {
+    outline: none;
+  }
+  #viewmore{
+    margin-left: 64%;
+    transform: translateX(-50%);
+    margin-bottom: 3%;
+
+  }
+  
