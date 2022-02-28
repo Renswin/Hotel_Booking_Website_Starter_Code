@@ -3,7 +3,7 @@
   margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   width: 40vw;
   height: fit-content;
  
@@ -51,4 +51,13 @@ ul{
   grid-row-gap: 1rem;
   margin-bottom: 6rem;
 
+}
+.hotel-link{
+  display: inline-flex;
+  
+
+}
+.description {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }

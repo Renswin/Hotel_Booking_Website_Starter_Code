@@ -43,10 +43,12 @@ header, footer {
 header{
   top:0;
   z-index: 1;
+  position:sticky;
 }
 footer{
   bottom:0;
   width: 100%;
+  position: sticky;
 }
 
 .main {
@@ -55,6 +57,7 @@ footer{
 #logo{
   width: 60px;
   height: 60px;
+  margin-left: 1%;
 }
 header{
   display: flex;
@@ -70,7 +73,6 @@ a:link{
 
 #copy{
 font-size: 10px;
-margin-top: 2%;
 }
 
 
@@ -82,4 +84,8 @@ margin-top: 2%;
   display:inline;
   align-self: center;
   vertical-align: middle;
+  margin-right:2%;
+}
+#login{
+  margin-right: 2%;
 }
