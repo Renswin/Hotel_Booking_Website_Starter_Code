@@ -79,7 +79,7 @@
     color: orange;
   }
   
-  .carousel-inner {
+  carousel-inner {
     max-width: fit-content;
     z-index: 0;
   }
@@ -99,8 +99,13 @@
   
   .carousel-control-next {
     top: -55%;
-    right: 30%;
+    right: 37%;
     z-index: 0;
+    
+  }
+  
+  .Header-Div {
+    z-index: 100;
   }
   .payment{
       display: flex;

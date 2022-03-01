@@ -96,3 +96,16 @@ content{
     position: relative;
   }
   
+  @media (max-width:576px){
+  #city{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  }
+  @media (max-width:576px){
+    #viewmore{
+      margin-left: 52%;
+      transform: translateX(-50%);
+    
+      }
+    }

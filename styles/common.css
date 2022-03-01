@@ -27,7 +27,7 @@ body {
 .social{
   max-width: 22px;
   height: 20px;
-  display: flex;
+  display:flexbox;
   justify-content: right;
 
 }
@@ -79,7 +79,6 @@ margin-top: 2%;
 
 #socialicon, #socialicon a{
   display:inline-block;
-  margin-right: 0.5%;
 }
 
 .contact{
