@@ -2,26 +2,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-          <link rel ="stylesheet" href="styles/list.css" />
-          <link rel="stylesheet" href="styles/common.css" />
-        
-        
+         <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/list.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+
+    <title>List</title>
         
     </head>
 <body>
 <div id = main>
 <header>
     <a href="index .html"><img src = "logo.png" id = logo height="100px" width="150px"></a>
-    <a href="login.html" target="_blank">login</a>
+    <button type="button" class="btn btn-light" id= "login">login</button>
 </header>
     <div  id="content">
-        <ul id="nav">
-            <li class="nav-item"><a href ="#Listview"><b>List View</b></a></li>
-            <li class="nav-item"><a href ="#Mapview"><b>Map View</b></a></li>
-        </ul>
-<div id="view">
-    <div id="Listview">
+        <ul class="nav nav-pills d-flex justify-content-center">
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary list-view-btn" onclick="handleView(event)">List View</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn map-view-btn" onclick="handleView(event)">Map View</button>
+            </li>
+          </ul>
+  
+          <!--LIST VIEW CONTAINER-->
+          <div id="list-view">
+
         <div id="raddision" class="container-hotel">
         <a class="hotel-link d-flex" href="detail.html" >
         <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="hotel">
@@ -51,29 +73,121 @@
 </a>
 </div>
     </div>
+    <div id="map-view">
+          <img class="map d-inline-block" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map" />
+        </div>
+      
     </div>
 </div>
+     <!--LOGIN MODAL-->
+     <div class="modal login-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Please Login</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+
+                onclick="closeLogin(event)"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="form-control py-4" onsubmit="closeLogin(event)">
+                <div class="row">
+                  <div class="col">
+                    <label for="email">Username</label>
+                  </div>
+                  <div class="col-8">
+                    <input type="email" name="email" required />
+                  </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col">
+                    <label for="password">Password</label>
+                  </div>
+                  <div class="col-8">
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                </div>
+              
+            </div>
+             <div class="modal-footer d-flex justify-content-center">
+              <input type="submit" value="login" class="btn btn-primary"/>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
 
 
-    
+        <!--CONTACT US MODAL-->
+        <div class="modal get-in-touch" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Get in touch</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
 
-   
-        <div id = "Mapview">
-        <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-        <p>Map View</p>
+                    onclick="closeContactUs(event)"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form-control" onsubmit="closeContactUs(event)">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter your email and we will get back to you.</p>
+                    <div class="row">
+                      <div class="col">
+                        <label for="email">Username </label>
+                      </div>
+                      <div class="col-8">
+                        <input type="email" name="email" required />
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                <div class="modal-footer d-flex justify-content-end">
+                  <input type="submit" value="submit" class="btn btn-primary"/>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <footer> 
-        <a href="contact.html">Contact Us</a>
+
+    <footer>
+        <button type="button" class="contact  contact-button btn-info text-light" onclick="handleContactUs(this)">Contact Us</button>
+       
         <div id="copy"><p>&copy; 2020 ROOM SEARCH PVT.LTD </p></div>
         <div id = "socialicon">
-           <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png" height="20px" width="22px" class="social"></a>
-           <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" height="20px" width="22px" class="social"></a>
-           <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" height="20px" width="22px" class="social"></a>
-
-        </div>
-        
+            <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png"  class = "social" height="20px" width="22px"></a>
+            <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" class = "social"  height="20px" width="22px"></a>
+            <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" class = "social" height="20px" width="22px"></a>
+ 
+         </div>
     </footer>
 </div>
 </div>
+<script src="scripts/common.js"></script>
+<script src="scripts/list.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
 </body>
     </html>

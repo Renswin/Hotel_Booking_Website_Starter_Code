@@ -106,4 +106,9 @@
       display: flex;
       justify-items: center;
   }
+  .btn{
+    align-self: center;
+    margin-left: 70%;
+
+  }
   

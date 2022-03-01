@@ -73,19 +73,23 @@ a:link{
 
 #copy{
 font-size: 10px;
+margin-top: 2%;
 }
 
 
 #socialicon, #socialicon a{
   display:inline-block;
+  margin-right: 0.5%;
 }
 
-#contact{
+.contact{
   display:inline;
   align-self: center;
   vertical-align: middle;
-  margin-right:2%;
+  margin-left:0.5%;
+  border-radius: 8px;
 }
 #login{
   margin-right: 2%;
 }
+

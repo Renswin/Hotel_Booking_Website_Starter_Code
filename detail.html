@@ -43,7 +43,9 @@
 <div id = main>
 <header>
     <a href="index .html"><img src="logo.png" id="logo" height="100px" width="150px"></a>
-    <a href= "login.html"  id= "login" target="_blank">Login</a>
+    <button type="button" class="login-btn btn btn-light me-2" onclick="handleLogin()">
+      Login
+    </button>
 </header>
 <div class="hotel-booking d-flex">
             
@@ -161,18 +163,25 @@
       perferendis! Expedita, animi suscipit.
     </p>
   </div>
-</div>
-    <footer>
-    <a href="contact.html" id=""contact>Contact Us</a>
-    <div><p>&copy; 2020 ROOM SEARCH PVT.LTD </p></div>
-        <div id = "socialicon">
-           <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png" class="social" height="20px" width="22px"></a>
-           <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" class="social" height="20px" width="22px"></a>
-           <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" class="social" height="20px" width="22px"></a>
+<footer>
+  <button type="button" class="contact  contact-button btn-info text-light" onclick="handleContactUs(this)">Contact Us</button>
+ 
+  <div id="copy"><p>&copy; 2020 ROOM SEARCH PVT.LTD </p></div>
+  <div id = "socialicon">
+      <a href="https://www.facebook.com"> <img src = "assests/images/facebook.png"  class = "social" height="20px" width="22px"></a>
+      <a href="https://www.instagram.com"> <img src = "assests/images/instagram.png" class = "social"  height="20px" width="22px"></a>
+      <a href="https://www.twitter.com"> <img src = "assests/images/twitter.png" class = "social" height="20px" width="22px"></a>
 
-        </div>
-        
-    </footer>
+   </div>
+</footer>
 </div>
+<script src="scripts/common.js"></script>
+<script src="scripts/detail.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+
 </body>
     </html>

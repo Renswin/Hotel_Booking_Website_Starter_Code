@@ -9,6 +9,9 @@
  
 
 }
+.container-hotel:hover{
+  background-color: rosybrown;
+}
 .hotel{
 width: 15.625rem;
 height: 12.5rem;
@@ -44,7 +47,7 @@ ul{
   text-decoration: none;
   color: black !important;
 }
-#Listview{
+#list-view{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -60,4 +63,22 @@ ul{
 .description {
   padding-left: 1rem;
   padding-top: 1rem;
+}
+.btn,
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  color: black;
+}
+
+.nav {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+#map-view {
+  display: none;
+}
+
+.map {
+  max-width: 100%;
 }
